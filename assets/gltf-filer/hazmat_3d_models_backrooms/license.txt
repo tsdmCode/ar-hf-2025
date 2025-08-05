@@ -1,0 +1,8 @@
+Model Information:
+* title:	Hazmat 3D models backrooms
+* source:	https://sketchfab.com/3d-models/hazmat-3d-models-backrooms-b5e50453ed92493ab71c5c52e0a23baf
+* author:	xxmohamed141 (https://sketchfab.com/xxmohamed141)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
