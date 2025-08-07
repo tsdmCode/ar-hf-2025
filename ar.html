@@ -4,18 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 1's AR project</title>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- Step 1a: "create an .html file and include A-Frame in the <head> (...)
+      To include A-Frame in an HTML file, we drop a <script> tag pointing to the CDN build: (...)
+      If we want to serve it ourselves, we can download the JS build:" 
+      https://aframe.io/docs/1.7.0/introduction/ 
+    -->
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <!-- Step 1b: 
+      "AR.js with Marker Tracking
+      Import AFRAME version:" 
+      https://ar-js-org.github.io/AR.js-Docs/#import-the-library 
+    -->
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- Potential TO DO: this JS file is currently empty. Everything runs on the above scripts. -->
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
+    <!-- Step 2: "VR Made Simple: Just drop in a <script> tag and <a-scene>. A-Frame will handle 3D boilerplate, VR setup, and default controls. Nothing to install, no build steps." 
+      https://aframe.io/docs/1.7.0/introduction/ -->
+      <!-- About attributes (info presented like on W3 Schools): 
+        "A logarithmic depth buffer may provide better sorting and rendering in scenes containing very large differences of scale and distance."
+        https://aframe.io/docs/1.7.0/components/renderer.html
+        "Add the embedded component, then style the <a-scene> element with CSS as if it were an empty <div>."
+        https://aframe.io/docs/1.7.0/components/embedded.html
+        https://aframe.io/docs/1.7.0/components/gltf-model.html
+        https://aframe.io/docs/1.7.0/components/scale.html
+        https://aframe.io/docs/1.7.0/components/position.html
+        About the value of position:
+        "Usually the model used in augmented reality is about changing the modelViewMatrix based on the marker position. the camera being static in 0,0,0 looking toward negative z.
+        We define as well a model where we move the camera, instead of the object. It changes the camera transform matrix."
+        https://jeromeetienne.github.io/AR.js/aframe/
+      -->  
+    <!-- arjs attribute:
+      Examples of attribute arjs at:
+      https://ar-js-org.github.io/AR.js-Docs/#import-the-library  
+      https://ar-js-org.github.io/AR.js-Docs/ui-events/
+      If detectionMode ends with matrix, you can specify matrixCodeType (4x4, 4x4_BCH_13_9_3 or 4x4_BCH_13_5_5 in our case as explained in class). 
+      List of matrix-code types at https://ar-js-org.github.io/AR.js-Docs/marker-based/
+    -->    
     <a-scene
-      arjs="sourceType: webcam; 
+      arjs="trackingMethod: best; 
+            sourceType: webcam; 
             detectionMode: mono_and_matrix; 
             matrixCodeType: 4x4_BCH_13_5_5;"
       renderer="logarithmicDepthBuffer: true;"
       embedded
     >
+      <!-- About primitives (even though we used 3D models in a-entity instead): 
+        "A-Frame provides a handful of elements such as <a-box> or <a-sky> called primitives that wrap the entity-component pattern to make it appealing for beginners. (...) Developers can create their own primitives as well. (...)
+        Keep in mind for now that primitives are <a-entity>s under the hood that:
+        - Have a semantic name (e.g., <a-box>)
+        - Have a preset bundle of components with default values
+        - Map or proxy HTML attributes to component data" 
+        https://aframe.io/docs/1.7.0/introduction/html-and-primitives.html 
+      -->
+      <!-- About the gltf-model attribute:  
+        "glTF (GL Transmission Format) (...)
+        In short, expect glTF models to work with A-Frame more reliably than other formats. (...)
+        Load a glTF model by pointing to an asset that specifies the src for a glTF file. (...)
+        Alternatively, load a glTF model by specifying the path directly within url(). However, the scene won’t wait for the resource to load before rendering." 
+        https://aframe.io/docs/1.7.0/components/gltf-model.html -->
+        <!-- You can add a color attribute to A-Frame elements, incl. a-text.
+        https://aframe.io/docs/1.7.0/introduction/installation.html
+        https://aframe.io/docs/1.7.0/introduction/html-and-primitives.html 
+      -->
+      <!-- Ar.js for A-Frame, marker-based tracking:
+        use a a-marker element. Its attributes are listed at:
+        https://jeromeetienne.github.io/AR.js/aframe/
+      -->
+      <!-- Good introduction articles on Medium: 
+        https://medium.com/@invisible_room/a-frame-an-easy-way-to-bring-3d-to-the-web-90f83cce45bb
+        https://codestax.medium.com/introduction-to-ar-js-bringing-augmented-reality-to-the-web-b5c88c2d4448 
+      -->  
       <a-marker type="barcode" value="2">
         <a-entity
         gltf-model="url(assets/gltf-filer/hazmat_suit_kvinde/scene.gltf)"
@@ -54,8 +114,13 @@
         scale="0.5 0.5 0.5"
         position="0 0 0"
         ></a-entity>
-        <a-text value="GOD DAG MIT NAVN ERRRRRRRRRR JONATHAN" position="0 0 0"></a-text>
+        <a-text value="GOD DAG MIT NAVN ERRRRRRRRRR JONATHAN" position="0 3 0"></a-text>
       </a-marker>
+      <!-- "<a-entity camera></a-entity>:
+        <a-entity> is a generic entity in A-Frame.
+        camera specifies that this entity is the camera through which the scene is viewed. It automatically gets configured to work with AR.js."
+        https://codestax.medium.com/introduction-to-ar-js-bringing-augmented-reality-to-the-web-b5c88c2d4448 
+      -->
       <a-entity camera></a-entity>
     </a-scene>
   </body>
