@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kowalski
+* source:	https://sketchfab.com/3d-models/kowalski-f50ccfc124d546948bc55bb1a4f298c9
+* author:	gaddiellartey2010 (https://sketchfab.com/gaddiellartey2010)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kowalski" (https://sketchfab.com/3d-models/kowalski-f50ccfc124d546948bc55bb1a4f298c9) by gaddiellartey2010 (https://sketchfab.com/gaddiellartey2010) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

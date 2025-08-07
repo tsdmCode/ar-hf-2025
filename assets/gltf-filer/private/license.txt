@@ -1,0 +1,11 @@
+Model Information:
+* title:	Private
+* source:	https://sketchfab.com/3d-models/private-c874448fe82a45448f7fad5adb0763ba
+* author:	gaddiellartey2010 (https://sketchfab.com/gaddiellartey2010)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Private" (https://sketchfab.com/3d-models/private-c874448fe82a45448f7fad5adb0763ba) by gaddiellartey2010 (https://sketchfab.com/gaddiellartey2010) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
