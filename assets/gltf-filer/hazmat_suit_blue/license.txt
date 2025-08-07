@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hazmat suit blue
+* source:	https://sketchfab.com/3d-models/hazmat-suit-blue-b23367b1829345769a94cdd8b95ef83d
+* author:	TumkaPook (https://sketchfab.com/TumkaPook)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hazmat suit blue" (https://sketchfab.com/3d-models/hazmat-suit-blue-b23367b1829345769a94cdd8b95ef83d) by TumkaPook (https://sketchfab.com/TumkaPook) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

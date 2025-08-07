@@ -1,5 +1,5 @@
-/* #region globals, variables and imports */
-@import 'reset.css';
+/* #region global styling, variables and imports */
+/* @import 'reset.css'; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -8,13 +8,39 @@ body {
 }
 
 h1 {
-  margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-a {
-  background: lightblue;
-  border-radius: 10px;
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+/* #endregion global styling, variables and imports */
+
+.link-styled-as-a-button {
+  /* Gradient that matches the QR code's gradient (brand identity) 
+  Frame: #FA6800
+  Left side of background (turquoise): #72E0A6 
+  Right side of background: #F0883A */
+  background: linear-gradient(90deg, #72E0A6 0%, #F0883A 100%);
+  border: solid 4px #FA6800;
+  padding-block: 1rem;
+  padding-inline: 4rem;
+  text-align: center;
   text-decoration: none;
-  padding: 0.5rem;
+}
+
+.qr-code {
+  height: 16rem;
 }

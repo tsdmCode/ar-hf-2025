@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hazmat Suit
+* source:	https://sketchfab.com/3d-models/hazmat-suit-095694921e914ae889e91767ed680e4b
+* author:	Lukas Hahn Graphics (https://sketchfab.com/specter)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hazmat Suit" (https://sketchfab.com/3d-models/hazmat-suit-095694921e914ae889e91767ed680e4b) by Lukas Hahn Graphics (https://sketchfab.com/specter) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
